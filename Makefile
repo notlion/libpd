@@ -43,39 +43,39 @@ endif
 PDNATIVE_SOLIB_EXT ?= $(SOLIB_EXT)
 
 PD_FILES = \
-	pure-data/src/d_arithmetic.c pure-data/src/d_array.c pure-data/src/d_ctl.c \
-	pure-data/src/d_dac.c pure-data/src/d_delay.c pure-data/src/d_fft.c \
-	pure-data/src/d_fft_mayer.c pure-data/src/d_fftroutine.c \
-	pure-data/src/d_filter.c pure-data/src/d_global.c pure-data/src/d_math.c \
-	pure-data/src/d_misc.c pure-data/src/d_osc.c pure-data/src/d_resample.c \
-	pure-data/src/d_soundfile.c pure-data/src/d_ugen.c \
-	pure-data/src/g_all_guis.c pure-data/src/g_array.c pure-data/src/g_bang.c \
-	pure-data/src/g_canvas.c pure-data/src/g_editor.c pure-data/src/g_graph.c \
-	pure-data/src/g_guiconnect.c pure-data/src/g_hdial.c \
-	pure-data/src/g_hslider.c pure-data/src/g_io.c pure-data/src/g_mycanvas.c \
-	pure-data/src/g_numbox.c pure-data/src/g_readwrite.c \
-	pure-data/src/g_rtext.c pure-data/src/g_scalar.c pure-data/src/g_template.c \
-	pure-data/src/g_text.c pure-data/src/g_toggle.c pure-data/src/g_traversal.c \
-	pure-data/src/g_vdial.c pure-data/src/g_vslider.c pure-data/src/g_vumeter.c \
-	pure-data/src/m_atom.c pure-data/src/m_binbuf.c pure-data/src/m_class.c \
-	pure-data/src/m_conf.c pure-data/src/m_glob.c pure-data/src/m_memory.c \
-	pure-data/src/m_obj.c pure-data/src/m_pd.c pure-data/src/m_sched.c \
-	pure-data/src/s_audio.c pure-data/src/s_audio_dummy.c \
-	pure-data/src/s_file.c pure-data/src/s_inter.c \
-	pure-data/src/s_loader.c pure-data/src/s_main.c pure-data/src/s_path.c \
-	pure-data/src/s_print.c pure-data/src/s_utf8.c pure-data/src/x_acoustics.c \
-	pure-data/src/x_arithmetic.c pure-data/src/x_array.c pure-data/src/x_connective.c \
-	pure-data/src/x_gui.c pure-data/src/x_interface.c pure-data/src/x_list.c \
-	pure-data/src/x_midi.c pure-data/src/x_misc.c pure-data/src/x_net.c \
-	pure-data/src/x_scalar.c pure-data/src/x_text.c pure-data/src/x_time.c \
-	libpd_wrapper/s_libpdmidi.c libpd_wrapper/x_libpdreceive.c \
-	libpd_wrapper/z_hooks.c libpd_wrapper/z_libpd.c 
+	src/pure-data/src/d_arithmetic.c src/pure-data/src/d_array.c src/pure-data/src/d_ctl.c \
+	src/pure-data/src/d_dac.c src/pure-data/src/d_delay.c src/pure-data/src/d_fft.c \
+	src/pure-data/src/d_fft_mayer.c src/pure-data/src/d_fftroutine.c \
+	src/pure-data/src/d_filter.c src/pure-data/src/d_global.c src/pure-data/src/d_math.c \
+	src/pure-data/src/d_misc.c src/pure-data/src/d_osc.c src/pure-data/src/d_resample.c \
+	src/pure-data/src/d_soundfile.c src/pure-data/src/d_ugen.c \
+	src/pure-data/src/g_all_guis.c src/pure-data/src/g_array.c src/pure-data/src/g_bang.c \
+	src/pure-data/src/g_canvas.c src/pure-data/src/g_editor.c src/pure-data/src/g_graph.c \
+	src/pure-data/src/g_guiconnect.c src/pure-data/src/g_hdial.c \
+	src/pure-data/src/g_hslider.c src/pure-data/src/g_io.c src/pure-data/src/g_mycanvas.c \
+	src/pure-data/src/g_numbox.c src/pure-data/src/g_readwrite.c \
+	src/pure-data/src/g_rtext.c src/pure-data/src/g_scalar.c src/pure-data/src/g_template.c \
+	src/pure-data/src/g_text.c src/pure-data/src/g_toggle.c src/pure-data/src/g_traversal.c \
+	src/pure-data/src/g_vdial.c src/pure-data/src/g_vslider.c src/pure-data/src/g_vumeter.c \
+	src/pure-data/src/m_atom.c src/pure-data/src/m_binbuf.c src/pure-data/src/m_class.c \
+	src/pure-data/src/m_conf.c src/pure-data/src/m_glob.c src/pure-data/src/m_memory.c \
+	src/pure-data/src/m_obj.c src/pure-data/src/m_pd.c src/pure-data/src/m_sched.c \
+	src/pure-data/src/s_audio.c src/pure-data/src/s_audio_dummy.c \
+	src/pure-data/src/s_file.c src/pure-data/src/s_inter.c \
+	src/pure-data/src/s_loader.c src/pure-data/src/s_main.c src/pure-data/src/s_path.c \
+	src/pure-data/src/s_print.c src/pure-data/src/s_utf8.c src/pure-data/src/x_acoustics.c \
+	src/pure-data/src/x_arithmetic.c src/pure-data/src/x_array.c src/pure-data/src/x_connective.c \
+	src/pure-data/src/x_gui.c src/pure-data/src/x_interface.c src/pure-data/src/x_list.c \
+	src/pure-data/src/x_midi.c src/pure-data/src/x_misc.c src/pure-data/src/x_net.c \
+	src/pure-data/src/x_scalar.c src/pure-data/src/x_text.c src/pure-data/src/x_time.c \
+	src/libpd_wrapper/s_libpdmidi.c src/libpd_wrapper/x_libpdreceive.c \
+	src/libpd_wrapper/z_hooks.c src/libpd_wrapper/z_libpd.c 
 
 # object files which are somehow generated but not from sources listed above,
 # there is probably a better fix but this works for now
 PD_EXTRA_OBJS = \
-	pure-data/src/d_fft_fftsg.o pure-data/src/d_fft_fftw.o \
-	pure-data/src/d_fftsg_h.o pure-data/src/x_qlist.o
+	src/pure-data/src/d_fft_fftsg.o src/pure-data/src/d_fft_fftw.o \
+	src/pure-data/src/d_fftsg_h.o src/pure-data/src/x_qlist.o
 
 PDJAVA_JAR_CLASSES = \
 	java/org/puredata/core/PdBase.java \
@@ -99,8 +99,8 @@ PDJAVA_DIR = $(PDJAVA_BUILD)/org/puredata/core/natives/$(PDNATIVE_PLATFORM)/$(PD
 PDJAVA_NATIVE = $(PDJAVA_DIR)/$(SOLIB_PREFIX)pdnative.$(PDNATIVE_SOLIB_EXT)
 PDJAVA_JAR = libs/libpd.jar
 
-CFLAGS = -DPD -DHAVE_UNISTD_H -DUSEAPI_DUMMY -I./pure-data/src \
-         -I./libpd_wrapper -I./libpd_wrapper/util $(PLATFORM_CFLAGS)
+CFLAGS = -DPD -DHAVE_UNISTD_H -DUSEAPI_DUMMY -I./src/pure-data/src \
+         -I./src/libpd_wrapper -I./src/libpd_wrapper/util $(PLATFORM_CFLAGS)
 
 .PHONY: libpd csharplib javalib clean clobber
 

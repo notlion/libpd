@@ -8,7 +8,7 @@ WD=$(dirname $0)
 VER=0.45-4
 
 SRC=pd-$VER
-DEST=../pure-data
+DEST=../src/pure-data
 
 ###
 
