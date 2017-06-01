@@ -498,3 +498,7 @@ void libpd_stop_gui(void) {
   sys_vgui("%s", "exit\n");
   sys_stopgui();
 }
+
+void libpd_poll_gui(void) {
+  sys_pollgui();
+}

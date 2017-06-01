@@ -110,6 +110,7 @@ EXTERN void libpd_set_midibytehook(const t_libpd_midibytehook hook);
 
 EXTERN int libpd_start_gui(const char *libdir);
 EXTERN void libpd_stop_gui(void);
+EXTERN void libpd_poll_gui(void);
 
 #ifdef __cplusplus
 }
