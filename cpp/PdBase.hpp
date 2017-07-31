@@ -19,7 +19,7 @@
 #include "PdMidiReceiver.hpp"
 
 #ifndef HAVE_UNISTD_H
-    #define HAVE_UNISTD_H
+    #define HAVE_UNISTD_H 1
 #endif
 
 // define this to use C++11 std::mutex for locking
