@@ -555,7 +555,7 @@ void libpd_set_midibytehook(const t_libpd_midibytehook hook) {
   libpd_midibytehook = hook;
 }
 
-int libpd_startgui(char *path) {
+int libpd_startgui(const char *path) {
   int retval;
   sys_lock();
   retval = sys_startgui(path);
@@ -563,13 +563,13 @@ int libpd_startgui(char *path) {
   return retval;
 }
 
-void libpd_stopgui( void) {
+void libpd_stopgui(void) {
   sys_lock();
   sys_stopgui();
   sys_unlock();
 }
 
-void libpd_pollgui( void) {
+void libpd_pollgui(void) {
   sys_lock();
   sys_pollgui();
   sys_unlock();
